@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto&amp;display=swap'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<div class="player">
+        <div class="cover">
+            <img src="./assets/square.jpg" alt="">
+        </div>
+        <div class="info">
+            <div class="title">So!YoON! (황소윤) X Phum Viphurit ‘Wings’</div>
+            <div class="singer">Fiora Berliana Putri</div>
+        </div>
+        <div class="music-box">
+            <input type="range" step="1" class="seekbar" value="0" min="0" max="100" oninput="handleSeekBar()">
+
+            <audio class="music-element">
+                <source src="./assets/Wings.mp3" type="audio/mp3">
+            </audio>
+            <span class="current-time">0:0</span><span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrow</i>
+            </span>
+        </div>
+    </div>
+<!-- partial -->
+  <script  src="./js/script.js"></script>
+
+</body>
+</html>
